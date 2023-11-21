@@ -40,7 +40,9 @@ setMounted(true)
     },[])
 
     const onSelect=(id:string)=>{
-        router.push(`/documents/${id}`)
+        console.log(id);
+        
+        router.push(`/documents/${id.split("-")[0]}`)
         onClose()
     }
 
